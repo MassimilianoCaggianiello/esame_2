@@ -1,0 +1,371 @@
+@import "variabili";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: $font_body;
+    display: flex;
+    flex-direction: column;
+}
+
+// Inizio header per tutte le pagine
+.divHeader {
+    background-color: $bg_header;
+    color: $c_header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 5%;
+}
+
+#divHeaderHome {
+    background-color: $bg_home1;
+    color: $c_home1;
+}
+
+// Fine header per tutte le pagine 
+
+
+
+// Inizio nav per tutte le pagine 
+.divNav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .navLink {
+            flex-basis: 50%;
+            display: flex;
+            width: 100%;
+
+            a {
+                width: 100%;
+                background-color: $bg_nav;
+                color: $c_nav;
+                display: flex;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                transition: background-color 0.3s ease;
+                border: solid 1px $c_body;
+
+                &:hover {
+                    background-color: $bg_nav_hvr;
+                    color: $c_nav_hvr;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+// Fine nav per tutte le pagine
+
+
+// Inizio main per tutte le pagine tranne per home
+.divBody {
+    width: 100%;
+    background-color: $bg_body;
+    color: $c_body;
+
+    a {
+        color: $c_body;
+        transition: font-weight 0.3s ease;
+
+        &:hover {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+
+    .divMain2 {
+        padding: 35px 5% 0 5%;
+
+        h2 {
+            margin-bottom: 35px;
+        }
+
+        h3,
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 35px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            border: 1px $border solid;
+            margin-bottom: 35px;
+        }
+
+        iframe {
+            width: 100%;
+            margin-top: -25px;
+            margin-bottom: 35px;
+            border-radius: 10px;
+            border: 1px $border solid;
+        }
+    }
+
+    #divMainContattiForm {
+
+        select,
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+            position: relative;
+            top: 2px;
+        }
+
+        #divSubmitContatti {
+            margin-bottom: 35px;
+        }
+    }
+
+    #divMainPortfolio {
+        padding: 35px 5% 15px 5%;
+
+        h2 {
+            margin-bottom: 35px;
+        }
+
+        h4 {
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            border: 1px $border solid;
+        }
+
+
+    }
+}
+
+// Fine main per tutte le pagine tranne per home
+
+
+
+// Inizio div principale solo per home
+#divMainHome {
+    font-size: 15px;
+}
+
+#divImageHome {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#divSectionHome1 {
+    border-top: 3px solid $bg_nav;
+    border-bottom: 3px solid $bg_nav;
+    background-color: $bg_home1;
+    color: $c_home1;
+    width: 100%;
+    padding: 35px 5%;
+    font-style: italic;
+}
+
+#divSectionHome2 {
+    background-color: $bg_home2;
+    color: $c_home2;
+    width: 100%;
+    padding: 35px 5%;
+}
+
+#divSectionHome3 {
+    background-color: $bg_home3;
+    color: $c_home3;
+    width: 100%;
+    padding-bottom: 15px;
+
+    p {
+        padding: 35px 5%;
+    }
+
+    .divAnteprimeHome {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .divAnteprimeHome2 {
+            display: flex;
+            justify-content: center;
+            flex-basis: 100%;
+            width: 100%;
+
+            img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                border: 1px $border solid;
+            }
+        }
+    }
+
+
+}
+
+// Fine div principale solo per home 
+
+
+
+// Inizio anteprime per tutte le pagine tranne per home e portfolio
+.divAnteprime {
+    width: 100%;
+    padding: 35px 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg_anteprime;
+    color: $c_anteprime;
+
+    h2 {
+        margin-bottom: 35px;
+    }
+
+    .divAnteprime2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .divAnteprime3 {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            border: 1px $border solid;
+        }
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+// Fine anteprime per tutte le pagine tranne per home e portfolio 
+
+
+
+// Fine anteprime servizi pagina portfolio 
+#divAnteprimePortfolio {
+    width: 100%;
+    padding: 35px 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg_anteprime;
+    color: $c_anteprime;
+
+    h2 {
+        margin-bottom: 35px;
+    }
+
+    .divAnteprimePortfolioServizi {
+        margin-bottom: 10px;
+    }
+}
+
+// Fine anteprime servizi pagina portfolio 
+
+
+
+// Inizio footer per tutte le pagine 
+.divFooter {
+    background-color: $bg_footer;
+    color: $c_footer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 5%;
+
+    a {
+        color: $c_footer;
+        transition: font-weight 0.3s ease;
+
+        &:hover {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+}
+
+// Fine footer per tutte le pagine 
+
+
+
+// Inizio bottone contatti fisso in basso a destra
+.divBottoneContattami {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+
+    a {
+        display: block;
+        padding: 5px 10px;
+        background: $bg_button;
+        color: $c_button;
+        text-align: center;
+        border: 1px solid $c_body;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $bg_button_hvr;
+            color: $c_button_hvr;
+        }
+    }
+}
+
+// Fine bottone contatti fisso in basso a destra
+
+
+
+@import "SmartphoneGrandi_TabletPiccoli";
+@import "Tablet_TabletGrandi";
+@import "DesktopPiccoli_Medi";
+@import "DesktopGrandi";

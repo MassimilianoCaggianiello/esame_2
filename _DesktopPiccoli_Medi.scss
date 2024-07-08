@@ -1,0 +1,204 @@
+// Desktop Piccoli / Medi
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    // Inizio header per tutte le pagine
+    .divHeader {
+        padding: 65px 14%;
+    }
+
+    // Fine header per tutte le pagine 
+
+
+
+    // Inizio nav per tutte le pagine 
+    .divNav {
+        ul {
+            .navLink {
+                flex-basis: 25%;
+                display: flex;
+                width: 100%;
+
+                a {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    // Fine nav per tutte le pagine
+
+
+
+    // Inizio main per tutte le pagine tranne per home
+    .divBody {
+        display: flex;
+        flex-direction: row;
+
+        .divMain {
+            flex-basis: 75%;
+        }
+
+        .divMain2 {
+            padding: 65px 14% 0 14%;
+
+            h2 {
+                margin-bottom: 65px;
+            }
+
+            h3,
+            h4 {
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin-bottom: 65px;
+            }
+
+            img {
+                margin-bottom: 65px;
+            }
+
+            iframe {
+                margin-bottom: 65px;
+            }
+        }
+
+        #divMainContattiForm {
+
+            select,
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                margin-bottom: 40px;
+            }
+
+            input[type="checkbox"] {
+                margin-bottom: 40px;
+            }
+
+            #divSubmitContatti {
+                margin-bottom: 65px;
+            }
+        }
+
+        #divMainPortfolio {
+            flex-basis: 75%;
+            padding: 65px 14% 65px 14%;
+
+            h2 {
+                margin-bottom: 65px;
+            }
+
+            h4 {
+                margin-top: 65px;
+                margin-bottom: 40px;
+            }
+
+            
+        }
+    }
+
+    // Fine main per tutte le pagine tranne per home
+
+
+
+    // Inizio div principale solo per home
+    #divMainHome {
+        font-size: 18px;
+    }
+
+    #divSectionHome1 {
+        padding: 65px 14%;
+    }
+
+    #divSectionHome2 {
+        padding: 65px 14%;
+    }
+
+    #divSectionHome3 {
+        padding-bottom: 45px;
+
+        p {
+            padding: 65px 14%;
+        }
+
+
+        .divAnteprimeHome {
+            padding-left: 14%;
+            padding-right: 14%;
+            justify-content: space-around;
+
+            .divAnteprimeHome2 {
+
+                flex-basis: 22%;
+
+                img {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+
+    // Fine div principale solo per home 
+
+
+
+    // Inizio anteprime per tutte le pagine tranne per home e portfolio
+    .divAnteprime {
+        flex-basis: 25%;
+        padding-top: 65px;
+
+        h2 {
+            margin-bottom: 65px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    // Fine anteprime per tutte le pagine tranne per home e portfolio 
+
+
+
+    // Fine anteprime servizi pagina portfolio 
+    #divAnteprimePortfolio {
+        flex-basis: 25%;
+        padding: 65px;
+
+        h2 {
+            margin-bottom: 65px;
+        }
+
+        .divAnteprimePortfolioServizi {
+            margin-bottom: 40px;
+        }
+    }
+
+    // Fine anteprime servizi pagina portfolio 
+
+
+
+    // Inizio footer per tutte le pagine 
+    .divFooter {
+        padding: 65px 14%;
+    }
+
+    // Fine footer per tutte le pagine 
+
+
+
+    // Inizio bottone contatti fisso in basso a destra
+    .divBottoneContattami {
+        bottom: 25px;
+        right: 25px;
+    }
+
+    // Fine bottone contatti fisso in basso a destra
+
+}
