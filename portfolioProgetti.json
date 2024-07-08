@@ -1,0 +1,148 @@
+{
+    "progetti": [
+        {
+            "titolo": "Sito Web Aziendale Sofia Optical",
+            "descrizione": "Realizzazione di un sito per Sofia Optical",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "./Immagini/sitoAziendale1.jpg",
+            "link": "paginaProgetto.html"
+        },
+        {
+            "titolo": "Sito Web Aziendale Inter",
+            "descrizione": "Realizzazione di un sito per Inter",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "./Immagini/sitoAziendale2.jpg",
+            "link": "https://inter.it"
+        },
+        {
+            "titolo": "Sito Web Aziendale Sartoria del Gusto",
+            "descrizione": "Realizzazione di un sito per Sartoria del Gusto",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "./Immagini/sitoAziendale3.jpg",
+            "link": "https://sartoriadelgusto.it"
+        },
+        {
+            "titolo": "Sito Web Aziendale Domus",
+            "descrizione": "Realizzazione di un sito per Domus",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "./Immagini/sitoAziendale4.jpg",
+            "link": "https://domus.it"
+        },
+        {
+            "titolo": "E-Commerce Amazon",
+            "descrizione": "Realizzazione di un sito per Amazon",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoEcommerce1.jpg",
+            "link": "https://amazon.it"
+        },
+        {
+            "titolo": "E-Commerce Subito",
+            "descrizione": "Realizzazione di un sito per Subito",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoEcommerce2.jpg",
+            "link": "https://subito.it"
+        },
+        {
+            "titolo": "E-Commerce Ebay",
+            "descrizione": "Realizzazione di un sito per Ebay",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoEcommerce3.jpg",
+            "link": "https://ebay.it"
+        },
+        {
+            "titolo": "E-Commerce Wish",
+            "descrizione": "Realizzazione di un sito per Wish",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoEcommerce4.jpg",
+            "link": "https://wish.it"
+        },
+        {
+            "titolo": "Sito di Informazione e Risorse Wikipedia",
+            "descrizione": "Realizzazione di un sito per Wikipedia",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoRisorse1.jpg",
+            "link": "https://wikipedia.it"
+        },
+        {
+            "titolo": "Sito di Informazione e Risorse Treccani",
+            "descrizione": "Realizzazione di un sito per Treccani",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoRisorse2.jpg",
+            "link": "https://treccani.it"
+        },
+        {
+            "titolo": "Sito di Informazione e Risorse W3C",
+            "descrizione": "Realizzazione di un sito per W3C",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoRisorse3.jpg",
+            "link": "https://w3c.it"
+        },
+        {
+            "titolo": "Sito di Informazione e Risorse HTML",
+            "descrizione": "Realizzazione di un sito per HTML",
+            "tecnologie": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP"
+            ],
+            "immagine": "Immagini/sitoRisorse4.jpg",
+            "link": "https://html.it"
+        }
+    ]
+}
