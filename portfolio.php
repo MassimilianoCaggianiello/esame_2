@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="Immagini/logo.png">
+    <link rel="icon" type="image/svg+xml" href="./Immagini/logo.png">
     <title>Massimiliano Caggianiello - Portfolio</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <!-- Inizio fonts di Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
     <!-- Inizio nav per tutte le pagine -->
     <nav id="divNavPortfolio" class="divNav">
         <ul>
-            <li class="navLink"><a href="index.html">HOME</a></li>
-            <li class="navLink"><a href="chiSono.html">CHI SONO</a></li>
-            <li class="navLink"><a href="servizi.html">SERVIZI</a></li>
-            <li class="navLink"><a href="portfolio.php">PORTFOLIO</a></li>
+            <li class="navLink"><a href="./index.php">HOME</a></li>
+            <li class="navLink"><a href="./chiSono.html">CHI SONO</a></li>
+            <li class="navLink"><a href="./servizi.html">SERVIZI</a></li>
+            <li class="navLink"><a href="./portfolio.php">PORTFOLIO</a></li>
         </ul>
     </nav>
     <!-- Fine nav per tutte le pagine -->
@@ -46,7 +46,7 @@
 
                 <!-- Inizio carico dati dei progetti da file JSON -->
                 <?php
-                $portfolioData = json_decode(file_get_contents('portfolioProgetti.json'), true);
+                $portfolioData = json_decode(file_get_contents('./portfolioProgetti.json'), true);
 
                 foreach ($portfolioData['progetti'] as $progetto) {
                     echo "<div class='progetto'>";
@@ -81,7 +81,7 @@
                     <h3>Consulenza Tecnica Personalizzata</h3>
                 </div>
                 <div class="divAnteprimePortfolioServizi">
-                    <p><a href="servizi.html">Altri...</a></p>
+                    <p><a href="./servizi.html">Altri...</a></p>
                 </div>
             </div>
         </div>
@@ -97,13 +97,13 @@
         <p>caggianiello@info.it</p>
         <p>Corso Roma,
             1 Foggia (FG) 71121</p>
-        <p><a href="privacyPolicy.html">Privacy Policy</a></p>
+        <p><a href="./privacyPolicy.html">Privacy Policy</a></p>
     </footer>
     <!-- Fine footer per tutte le pagine -->
 
     <!-- Inizio bottone contatti fisso in basso a destra -->
     <div id="divBottoneContattamiPortfolio" class="divBottoneContattami">
-        <a href="contatti.html">CONTATTAMI</a>
+        <a href="./contatti.html">CONTATTAMI</a>
     </div>
     <!-- Fine bottone contatti fisso in basso a destra -->
 

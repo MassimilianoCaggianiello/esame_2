@@ -57,7 +57,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoEcommerce1.jpg",
+            "immagine": "./Immagini/sitoEcommerce1.jpg",
             "link": "https://amazon.it"
         },
         {
@@ -69,7 +69,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoEcommerce2.jpg",
+            "immagine": "./Immagini/sitoEcommerce2.jpg",
             "link": "https://subito.it"
         },
         {
@@ -81,7 +81,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoEcommerce3.jpg",
+            "immagine": "./Immagini/sitoEcommerce3.jpg",
             "link": "https://ebay.it"
         },
         {
@@ -93,7 +93,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoEcommerce4.jpg",
+            "immagine": "./Immagini/sitoEcommerce4.jpg",
             "link": "https://wish.it"
         },
         {
@@ -105,7 +105,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoRisorse1.jpg",
+            "immagine": "./Immagini/sitoRisorse1.jpg",
             "link": "https://wikipedia.it"
         },
         {
@@ -117,7 +117,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoRisorse2.jpg",
+            "immagine": "./Immagini/sitoRisorse2.jpg",
             "link": "https://treccani.it"
         },
         {
@@ -129,7 +129,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoRisorse3.jpg",
+            "immagine": "./Immagini/sitoRisorse3.jpg",
             "link": "https://w3c.it"
         },
         {
@@ -141,7 +141,7 @@
                 "SASS",
                 "PHP"
             ],
-            "immagine": "Immagini/sitoRisorse4.jpg",
+            "immagine": "./Immagini/sitoRisorse4.jpg",
             "link": "https://html.it"
         }
     ]

@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="Immagini/logo.png">
+    <link rel="icon" type="image/svg+xml" href="./Immagini/logo.png">
     <title>Massimiliano Caggianiello - Home</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <!-- Inizio fonts di Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Fine fonts di Google -->
 </head>
 
@@ -29,17 +27,17 @@
     <!-- Inizio nav per tutte le pagine -->
     <nav id="divNavHome" class="divNav">
         <ul>
-            <li class="navLink"><a href="index.html">HOME</a></li>
-            <li class="navLink"><a href="chiSono.html">CHI SONO</a></li>
-            <li class="navLink"><a href="servizi.html">SERVIZI</a></li>
-            <li class="navLink"><a href="portfolio.php">PORTFOLIO</a></li>
+            <li class="navLink"><a href="./index.php">HOME</a></li>
+            <li class="navLink"><a href="./chiSono.html">CHI SONO</a></li>
+            <li class="navLink"><a href="./servizi.html">SERVIZI</a></li>
+            <li class="navLink"><a href="./portfolio.php">PORTFOLIO</a></li>
         </ul>
     </nav>
     <!-- Fine nav per tutte le pagine -->
 
     <!-- Inizio div principale solo per home -->
     <main id="divMainHome">
-        <div id="divImageHome" style="background-image: url(Immagini/earth.jpg);"></div>
+        <div id="divImageHome" style="background-image: url(./Immagini/earth.jpg);"></div>
         <div id="divSectionHome1">
             <p>"Nel mondo digitale di oggi, il 70% delle aziende leader attribuisce il proprio successo
                 all'innovazione online,
@@ -71,19 +69,19 @@
             <div class="divAnteprimeHome">
 
                 <div class="divAnteprimeHome2">
-                    <img src="Immagini/sitoAziendale1.jpg" alt="">
+                    <img src="./Immagini/sitoAziendale1.jpg" alt="">
                 </div>
 
                 <div class="divAnteprimeHome2">
-                    <img src="Immagini/sitoAziendale2.jpg" alt="">
+                    <img src="./Immagini/sitoAziendale2.jpg" alt="">
                 </div>
 
                 <div class="divAnteprimeHome2">
-                    <img src="Immagini/sitoAziendale3.jpg" alt="">
+                    <img src="./Immagini/sitoAziendale3.jpg" alt="">
                 </div>
 
                 <div class="divAnteprimeHome2">
-                    <img src="Immagini/sitoAziendale4.jpg" alt="">
+                    <img src="./Immagini/sitoAziendale4.jpg" alt="">
                 </div>
 
             </div>
@@ -98,13 +96,13 @@
         <p>caggianiello@info.it</p>
         <p>Corso Roma,
             1 Foggia (FG) 71121</p>
-        <p><a href="privacyPolicy.html">Privacy Policy</a></p>
+        <p><a href="./privacyPolicy.html">Privacy Policy</a></p>
     </footer>
     <!-- Fine footer per tutte le pagine -->
 
     <!-- Inizio bottone contatti fisso in basso a destra -->
     <div id="divBottoneContattamiChiSono" class="divBottoneContattami">
-        <a href="contatti.html">CONTATTAMI</a>
+        <a href="./contatti.html">CONTATTAMI</a>
     </div>
     <!-- Fine bottone contatti fisso in basso a destra -->
 
