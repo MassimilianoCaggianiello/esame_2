@@ -10,9 +10,7 @@
     <!-- Inizio fonts di Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Fine fonts di Google -->
 </head>
 
@@ -27,14 +25,7 @@
     <!-- Fine header per tutte le pagine -->
 
     <!-- Inizio nav per tutte le pagine -->
-    <nav id="divNavContatti" class="divNav">
-        <ul>
-            <li class="navLink"><a href="./index.php">HOME</a></li>
-            <li class="navLink"><a href="./chiSono.html">CHI SONO</a></li>
-            <li class="navLink"><a href="./servizi.html">SERVIZI</a></li>
-            <li class="navLink"><a href="./portfolio.php">PORTFOLIO</a></li>
-        </ul>
-    </nav>
+    <?php include './nav.php'; ?>
     <!-- Fine nav per tutte le pagine -->
 
     <!-- Inizio div principale per tutte le pagine tranne per home -->
@@ -52,9 +43,7 @@
                         O vieni a trovarmi fisicamente in sede a Corso Roma, 1 Foggia (FG)
                         71121</p>
                     <div id="divIframeContatti">
-                        <div id="divIframeContatti2"><iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.1048167649815!2d15.553035800000002!3d41.458641899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339d85755b52a11%3A0xd344699e860104f1!2sCorso%20Roma%2C%201%2C%2071121%20Foggia%20FG!5e0!3m2!1sit!2sit!4v1697988897903!5m2!1sit!2sit"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="divIframeContatti2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.1048167649815!2d15.553035800000002!3d41.458641899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339d85755b52a11%3A0xd344699e860104f1!2sCorso%20Roma%2C%201%2C%2071121%20Foggia%20FG!5e0!3m2!1sit!2sit!4v1697988897903!5m2!1sit!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
@@ -83,13 +72,11 @@
 
                         <div id="divTrattamemtoDati"><label for="trattamentoDatiPersonali">Acconsento al trattamento dei
                                 dati personali:</label>
-                            <input type="checkbox" id="trattamentoDatiPersonali" name="trattamentoDatiPersonali"
-                                value="acconsento" required><br>
+                            <input type="checkbox" id="trattamentoDatiPersonali" name="trattamentoDatiPersonali" value="acconsento" required><br>
                         </div>
 
                         <label for="extraInfo"></label>
-                        <textarea name="extraInfo" id="extraInfo" cols="30" rows="10"
-                            placeholder="Dicci qualcosa in più:"></textarea>
+                        <textarea name="extraInfo" id="extraInfo" cols="30" rows="10" placeholder="Dicci qualcosa in più:"></textarea>
 
                         <div id="divSubmitContatti"><input type="submit" id="submitContatti" value="INVIA"></div>
                     </form>
@@ -125,14 +112,7 @@
     <!-- Fine div principale per tutte le pagine tranne per home -->
 
     <!-- Inizio footer per tutte le pagine -->
-    <footer id="divFooterContatti" class="divFooter">
-        <p style="font-weight: bold;">Massimiliano Caggianiello</p>
-        <p>tel.333654321</p>
-        <p>caggianiello@info.it</p>
-        <p>Corso Roma,
-            1 Foggia (FG) 71121</p>
-        <p><a href="./privacyPolicy.html">Privacy Policy</a></p>
-    </footer>
+    <?php include './footer.php'; ?>
     <!-- Fine footer per tutte le pagine -->
 
     <!-- Inizio bottone contatti fisso in basso a destra -->

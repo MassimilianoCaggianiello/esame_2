@@ -10,9 +10,7 @@
     <!-- Inizio fonts di Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Fine fonts di Google -->
 </head>
 
@@ -27,14 +25,7 @@
     <!-- Fine header per tutte le pagine -->
 
     <!-- Inizio nav per tutte le pagine -->
-    <nav id="divNavProgettoSofiaOptical" class="divNav">
-        <ul>
-            <li class="navLink"><a href="./index.php">HOME</a></li>
-            <li class="navLink"><a href="./chiSono.html">CHI SONO</a></li>
-            <li class="navLink"><a href="./servizi.html">SERVIZI</a></li>
-            <li class="navLink"><a href="./portfolio.php">PORTFOLIO</a></li>
-        </ul>
-    </nav>
+    <?php include './nav.php'; ?>
     <!-- Fine nav per tutte le pagine -->
 
     <!-- Inizio div principale per tutte le pagine tranne per home -->
@@ -80,14 +71,7 @@
     <!-- Fine div principale per tutte le pagine tranne per home -->
 
     <!-- Inizio footer per tutte le pagine -->
-    <footer id="divFooterProgettoSofiaOptical" class="divFooter">
-        <p style="font-weight: bold;">Massimiliano Caggianiello</p>
-        <p>tel.333654321</p>
-        <p>caggianiello@info.it</p>
-        <p>Corso Roma,
-            1 Foggia (FG) 71121</p>
-        <p><a href="./privacyPolicy.html">Privacy Policy</a></p>
-    </footer>
+    <?php include './footer.php'; ?>
     <!-- Fine footer per tutte le pagine -->
 
     <!-- Inizio bottone contatti fisso in basso a destra -->

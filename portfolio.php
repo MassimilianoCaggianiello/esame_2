@@ -25,14 +25,7 @@
     <!-- Fine header per tutte le pagine -->
 
     <!-- Inizio nav per tutte le pagine -->
-    <nav id="divNavPortfolio" class="divNav">
-        <ul>
-            <li class="navLink"><a href="./index.php">HOME</a></li>
-            <li class="navLink"><a href="./chiSono.html">CHI SONO</a></li>
-            <li class="navLink"><a href="./servizi.html">SERVIZI</a></li>
-            <li class="navLink"><a href="./portfolio.php">PORTFOLIO</a></li>
-        </ul>
-    </nav>
+    <?php include './nav.php'; ?>
     <!-- Fine nav per tutte le pagine -->
 
     <!-- Inizio div principale per tutte le pagine tranne per home -->
@@ -91,14 +84,7 @@
     <!-- Fine div principale per tutte le pagine tranne per home -->
 
     <!-- Inizio footer per tutte le pagine -->
-    <footer id="divFooterPortfolio" class="divFooter">
-        <p style="font-weight: bold;">Massimiliano Caggianiello</p>
-        <p>tel.333654321</p>
-        <p>caggianiello@info.it</p>
-        <p>Corso Roma,
-            1 Foggia (FG) 71121</p>
-        <p><a href="./privacyPolicy.html">Privacy Policy</a></p>
-    </footer>
+    <?php include './footer.php'; ?>
     <!-- Fine footer per tutte le pagine -->
 
     <!-- Inizio bottone contatti fisso in basso a destra -->
