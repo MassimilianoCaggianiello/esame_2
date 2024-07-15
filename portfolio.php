@@ -47,7 +47,7 @@
                     echo "<img src='" . $progetto['immagine'] . "' alt='Immagine di " . $progetto['titolo'] . "'>";
                     echo "<p>" . $progetto['descrizione'] . "</p>";
                     echo "<p>Tecnologie utilizzate: " . implode(", ", $progetto['tecnologie']) . "</p>";
-                    echo "<a href='" . $progetto['link'] . "'>Vedi il progetto</a>";
+                    echo "<a href='paginaProgetto.php?id=" . $progetto['id'] . "'>Vedi il progetto</a>";
                     echo "</div>";
                 }
                 ?>

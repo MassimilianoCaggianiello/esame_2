@@ -32,22 +32,38 @@
     <div id="divBodyProgettoSofiaOptical" class="divBody">
 
         <!-- Inizio corpo per tutte le pagine tranne per home -->
-        <main id="divMainProgettoSofiaOptical" class="divMain">
-            <div id="divMainProgettoSofiaOptical2" class="divMain2">
-                <h2>SOFIA OPTICAL</h2>
-                <img src="./Immagini/sitoAziendale1.jpg" alt="Progetto Sofia Optical">
-                <h3>Progetto realizzato per Sofia Optical</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui praesentium magni quisquam
-                    voluptas labore quas cumque tempora numquam perspiciatis, minus asperiores ducimus dolorem accusamus
-                    id eum maxime natus temporibus.</p>
+        <main id="divMainProgetto" class="divMain">
+            <div id="divMainProgetto2" class="divMain2">
+                <?php
+                $id = $_GET['id'];
+
+                $json = file_get_contents('./portfolioProgetti.json');
+                $progetti = json_decode($json, true);
+
+                foreach ($progetti['progetti'] as $progetto) {
+                    if ($progetto['id'] == $id) {
+                        echo '<h2>' . $progetto['titolo'] . '</h2>';
+                        echo '<img src="' . $progetto['immagine'] . '" alt="Immagine di ' . $progetto['titolo'] . '">';
+                        echo '<h3>' . $progetto['descrizione'] . '</h3>';
+                        echo '<p>Tecnologie utilizzate: ' . implode(", ", $progetto['tecnologie']) . '</p>';
+                        echo '<p>' . $progetto['descrizione'] . '</p>';
+                        if (strpos($progetto['link'], 'http') === 0) {
+                            echo '<p>Link: <a href="' . $progetto['link'] . '">Visita il sito</a></p>';
+                        } else {
+                            echo '<p>Link: <a href="paginaProgetto.php?id=' . $progetto['id'] . '">Dettagli</a></p>';
+                        }
+                        break;
+                    }
+                }
+                ?>
             </div>
         </main>
         <!-- Fine corpo per tutte le pagine tranne per home -->
 
         <!-- Inizio anteprime per tutte le pagine tranne per home e portfolio -->
-        <div id="divAnteprimeProgettoSofiaOptical" class="divAnteprime">
+        <div id="divAnteprimeProgetto" class="divAnteprime">
             <h2>PROGETTI</h2>
-            <div id="divAnteprimeProgettoSofiaOptical2" class="divAnteprime2">
+            <div id="divAnteprimeProgetto2" class="divAnteprime2">
                 <div class="divAnteprime3"><img src="./Immagini/sitoAziendale1.jpg" alt="Anteprima Sito Aziendale 1">
                     <p>Sito Aziendale 1</p>
                 </div>

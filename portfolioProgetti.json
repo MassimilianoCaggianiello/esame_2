@@ -1,6 +1,7 @@
 {
     "progetti": [
         {
+            "id": 1,
             "titolo": "Sito Web Aziendale Sofia Optical",
             "descrizione": "Realizzazione di un sito per Sofia Optical",
             "tecnologie": [
@@ -10,9 +11,10 @@
                 "PHP"
             ],
             "immagine": "./Immagini/sitoAziendale1.jpg",
-            "link": "paginaProgetto.html"
+            "link": "https://www.otticasofia.it/"
         },
         {
+            "id": 2,
             "titolo": "Sito Web Aziendale Inter",
             "descrizione": "Realizzazione di un sito per Inter",
             "tecnologie": [
@@ -25,6 +27,7 @@
             "link": "https://inter.it"
         },
         {
+            "id": 3,
             "titolo": "Sito Web Aziendale Sartoria del Gusto",
             "descrizione": "Realizzazione di un sito per Sartoria del Gusto",
             "tecnologie": [
@@ -37,6 +40,7 @@
             "link": "https://sartoriadelgusto.it"
         },
         {
+            "id": 4,
             "titolo": "Sito Web Aziendale Domus",
             "descrizione": "Realizzazione di un sito per Domus",
             "tecnologie": [
@@ -49,6 +53,7 @@
             "link": "https://domus.it"
         },
         {
+            "id": 5,
             "titolo": "E-Commerce Amazon",
             "descrizione": "Realizzazione di un sito per Amazon",
             "tecnologie": [
@@ -61,6 +66,7 @@
             "link": "https://amazon.it"
         },
         {
+            "id": 6,
             "titolo": "E-Commerce Subito",
             "descrizione": "Realizzazione di un sito per Subito",
             "tecnologie": [
@@ -73,6 +79,7 @@
             "link": "https://subito.it"
         },
         {
+            "id": 7,
             "titolo": "E-Commerce Ebay",
             "descrizione": "Realizzazione di un sito per Ebay",
             "tecnologie": [
@@ -85,6 +92,7 @@
             "link": "https://ebay.it"
         },
         {
+            "id": 8,
             "titolo": "E-Commerce Wish",
             "descrizione": "Realizzazione di un sito per Wish",
             "tecnologie": [
@@ -97,6 +105,7 @@
             "link": "https://wish.it"
         },
         {
+            "id": 9,
             "titolo": "Sito di Informazione e Risorse Wikipedia",
             "descrizione": "Realizzazione di un sito per Wikipedia",
             "tecnologie": [
@@ -109,6 +118,7 @@
             "link": "https://wikipedia.it"
         },
         {
+            "id": 10,
             "titolo": "Sito di Informazione e Risorse Treccani",
             "descrizione": "Realizzazione di un sito per Treccani",
             "tecnologie": [
@@ -121,6 +131,7 @@
             "link": "https://treccani.it"
         },
         {
+            "id": 11,
             "titolo": "Sito di Informazione e Risorse W3C",
             "descrizione": "Realizzazione di un sito per W3C",
             "tecnologie": [
@@ -133,6 +144,7 @@
             "link": "https://w3c.it"
         },
         {
+            "id": 12,
             "titolo": "Sito di Informazione e Risorse HTML",
             "descrizione": "Realizzazione di un sito per HTML",
             "tecnologie": [
