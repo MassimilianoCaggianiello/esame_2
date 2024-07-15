@@ -51,7 +51,7 @@
 
                 <div id="divMainContattiForm">
                     <h3>Altrimenti compila il seguente form per essere subito ricontattato:</h3>
-                    <form action="./salvaContatto.php" method="post">
+                    <form action="./salvaContatto.php" method="post" novalidate>
                         <label for="info">Che tipo di informazione desideri?</label><br>
                         <select name="info" id="info" required>
                             <option value="" disabled selected>Scegli un'opzione...</option>
