@@ -51,32 +51,42 @@
 
                 <div id="divMainContattiForm">
                     <h3>Altrimenti compila il seguente form per essere subito ricontattato:</h3>
-                    <form action="./salvaContatto.php" method="post" novalidate>
+
+                    <?php
+                    include './salvaContatto.php';
+                    ?>
+
+                    <form action="./contatti.php" method="post" novalidate>
                         <label for="info">Che tipo di informazione desideri?</label><br>
+                        <span class="erroriContatti"><?= $errors["info"] ?></span><br>
                         <select name="info" id="info" required>
                             <option value="" disabled selected>Scegli un'opzione...</option>
-                            <option value="nuovoSito">Voglio creare un mio sito</option>
-                            <option value="assistenzaSito">Voglio essere assistito per il mio sito già esistente
+                            <option value="nuovoSito" <?= ($info == "nuovoSito") ? "selected" : "" ?>>Voglio creare un mio sito</option>
+                            <option value="assistenzaSito" <?= ($info == "assistenzaSito") ? "selected" : "" ?>>Voglio essere assistito per il mio sito già esistente
                             </option>
-                            <option value="altro">Altro</option>
+                            <option value="altro" <?= ($info == "altro") ? "selected" : "" ?>>Altro</option>
                         </select><br>
 
                         <label for="nome">Nome:</label><br>
-                        <input type="text" name="nome" id="nome" placeholder="Mario" required><br>
+                        <span class="erroriContatti"><?= $errors["nome"] ?></span><br>
+                        <input type="text" name="nome" id="nome" placeholder="Mario" value="<?= $nome ?>" required><br>
 
                         <label for="cognome">Cognome:</label><br>
-                        <input type="text" name="cognome" id="cognome" placeholder="Rossi" required><br>
+                        <span class="erroriContatti"><?= $errors["cognome"] ?></span><br>
+                        <input type="text" name="cognome" id="cognome" placeholder="Rossi" value="<?= $cognome ?>" required><br>
 
                         <label for="email">Email:</label><br>
-                        <input type="email" name="email" id="email" placeholder="mariorossi@...." required><br>
+                        <span class="erroriContatti"><?= $errors["email"] ?></span><br>
+                        <input type="email" name="email" id="email" placeholder="mariorossi@...." value="<?= $email ?>" required><br>
 
                         <div id="divTrattamemtoDati"><label for="trattamentoDatiPersonali">Acconsento al trattamento dei
                                 dati personali:</label>
-                            <input type="checkbox" id="trattamentoDatiPersonali" name="trattamentoDatiPersonali" value="acconsento" required><br>
+                            <input type="checkbox" id="trattamentoDatiPersonali" name="trattamentoDatiPersonali" value="acconsento" <?= ($trattamentoDatiPersonali == "acconsento") ? "checked" : "" ?> required>
+                            <span class="erroriContatti"><?= $errors["trattamentoDatiPersonali"] ?></span><br>
                         </div>
 
                         <label for="extraInfo"></label>
-                        <textarea name="extraInfo" id="extraInfo" cols="30" rows="10" placeholder="Dicci qualcosa in più:"></textarea>
+                        <textarea name="extraInfo" id="extraInfo" cols="30" rows="10" placeholder="Dicci qualcosa in più:"><?= $messaggio ?></textarea>
 
                         <div id="divSubmitContatti"><input type="submit" id="submitContatti" value="INVIA"></div>
                     </form>
@@ -107,20 +117,16 @@
             </div>
         </div>
         <!-- Fine anteprime per tutte le pagine tranne per home -->
-
     </div>
     <!-- Fine div principale per tutte le pagine tranne per home -->
-
     <!-- Inizio footer per tutte le pagine -->
     <?php include './footer.php'; ?>
     <!-- Fine footer per tutte le pagine -->
-
     <!-- Inizio bottone contatti fisso in basso a destra -->
     <div id="divBottoneContattamiContatti" class="divBottoneContattami">
         <a href="./contatti.php">CONTATTAMI</a>
     </div>
     <!-- Fine bottone contatti fisso in basso a destra -->
-
 </body>
 
 </html>
