@@ -74,7 +74,7 @@
                     <h3>Consulenza Tecnica Personalizzata</h3>
                 </div>
                 <div class="divAnteprimePortfolioServizi">
-                    <p><a href="./servizi.php">Altri...</a></p>
+                    <p><a href="./servizi.php" title="Vai a Servizi">Altri...</a></p>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
 
     <!-- Inizio bottone contatti fisso in basso a destra -->
     <div id="divBottoneContattamiPortfolio" class="divBottoneContattami">
-        <a href="./contatti.php">CONTATTAMI</a>
+        <a href="./contatti.php" title="Vai a Contatti">CONTATTAMI</a>
     </div>
     <!-- Fine bottone contatti fisso in basso a destra -->
 

@@ -112,7 +112,7 @@
                     <p>Sito Aziendale 4</p>
                 </div>
                 <div class="divAnteprime3">
-                    <p><a href="./portfolio.php">Altri...</a></p>
+                    <p><a href="./portfolio.php" title="Vai a Portfolio">Altri...</a></p>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
 
     <!-- Inizio bottone contatti fisso in basso a destra -->
     <div id="divBottoneContattamiPrivacyPolicy" class="divBottoneContattami">
-        <a href="./contatti.php">CONTATTAMI</a>
+        <a href="./contatti.php" title="Vai a Contatti">CONTATTAMI</a>
     </div>
     <!-- Fine bottone contatti fisso in basso a destra -->
 

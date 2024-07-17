@@ -5,6 +5,6 @@
     <p>caggianiello@info.it</p>
     <p>Corso Roma,
         1 Foggia (FG) 71121</p>
-    <p><a href="./privacyPolicy.php">Privacy Policy</a></p>
+    <p><a href="./privacyPolicy.php" title="Vai a Privacy Policy">Privacy Policy</a></p>
 </footer>
 <!-- Fine footer per tutte le pagine -->
