@@ -109,7 +109,7 @@
 
     <!-- Inizio bottone contatti fisso in basso a destra -->
     <div id="divBottoneContattamiChiSono" class="divBottoneContattami">
-        <a href="./contatti.html">CONTATTAMI</a>
+        <a href="./contatti.php">CONTATTAMI</a>
     </div>
     <!-- Fine bottone contatti fisso in basso a destra -->
 
