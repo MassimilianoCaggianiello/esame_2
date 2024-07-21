@@ -1,22 +1,20 @@
-$template: "giorno";
-
 $font_body: 'Open Sans',
 sans-serif;
 
-$bg_body:#EDF5FD;
-$c_body:#000000;
-$bg_header:#041425;
+$bg_body: #EDF5FD;
+$c_body: #000000;
+$bg_header: #041425;
 $c_header: #FFFFFF;
 $bg_nav: #1466B8;
-$c_nav:#FFFFFF;
+$c_nav: #FFFFFF;
 $bg_nav_hvr: #479CEB;
 $c_nav_hvr: #000000;
 $bg_button: #1466B8;
-$c_button:#FFFFFF;
+$c_button: #FFFFFF;
 $bg_button_hvr: #479CEB;
 $c_button_hvr: #000000;
 $bg_anteprime: #A3CDF5;
-$c_anteprime:#000000;
+$c_anteprime: #000000;
 $border: #041425;
 $bg_footer: #041425;
 $c_footer: #FFFFFF;
@@ -28,3 +26,10 @@ $bg_home3: #DAEBFB;
 $c_home3: #000000;
 
 $height: width;
+
+$nav_font_size_large: 1.5rem;
+$nav_font_size_medium: 1.2rem;
+$nav_font_size_small: 1rem;
+$nav_padding_large: 15px 20px;
+$nav_padding_medium: 14px 17px;
+$nav_padding_small: 12px 15px;

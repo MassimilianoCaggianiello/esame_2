@@ -1,4 +1,5 @@
 @import "variabili";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 * {
     margin: 0;
@@ -11,6 +12,8 @@ body {
     font-family: $font_body;
     display: flex;
     flex-direction: column;
+    background-color: $bg_body;
+    color: $c_body;
 }
 
 // Inizio header per tutte le pagine
@@ -22,6 +25,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 35px 5%;
+    transition: padding 0.3s ease;
 }
 
 #divHeaderHome {
@@ -29,50 +33,142 @@ body {
     color: $c_home1;
 }
 
-// Fine header per tutte le pagine 
+// Fine header per tutte le pagine
 
-
-
-// Inizio nav per tutte le pagine 
+// Inizio nav per tutte le pagine
 .divNav {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    ul {
+    .nav-bar {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        background-color: $bg_nav;
+        padding: 12px 20px;
 
-        .navLink {
-            flex-basis: 50%;
+        .menu-text {
+            color: $c_nav;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0 20px;
             display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li {
+            padding-left: 30px;
+        }
+
+        .menu li a {
+            display: inline-block;
+            text-decoration: none;
+            color: $c_nav;
+            text-align: center;
+            transition: 0.15s ease-in-out;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .menu li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $c_nav;
+            transition: 0.15s ease-in-out;
+        }
+
+        .menu li a:hover::after {
             width: 100%;
+        }
 
-            a {
-                width: 100%;
-                background-color: $bg_nav;
-                color: $c_nav;
-                display: flex;
-                text-decoration: none;
-                justify-content: center;
-                align-items: center;
-                transition: background-color 0.3s ease;
-                border: solid 1px $c_body;
+        .open-menu,
+        .close-menu {
+            position: absolute;
+            color: $c_nav;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+        }
 
-                &:hover {
-                    background-color: $bg_nav_hvr;
-                    color: $c_nav_hvr;
-                    font-weight: bolder;
-                }
-            }
+        .open-menu {
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1010;
+        }
+
+        .close-menu {
+            top: 20px;
+            right: 20px;
+            z-index: 1020;
+        }
+
+        #check {
+            display: none;
+        }
+
+        #check:checked~.open-menu {
+            visibility: hidden;
+        }
+
+        #check:checked~.close-menu {
+            visibility: visible;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .nav-bar .open-menu,
+        .nav-bar .close-menu {
+            display: block;
+        }
+
+        .nav-bar .menu {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 100;
+            background-color: $bg_nav;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .nav-bar .menu li {
+            margin-top: 40px;
+        }
+
+        .nav-bar .menu li a {
+            padding: 10px;
+        }
+
+        .nav-bar #check:checked~.menu {
+            right: 0;
         }
     }
 }
 
 // Fine nav per tutte le pagine
-
 
 // Inizio main per tutte le pagine tranne per home
 .divBody {
@@ -87,6 +183,12 @@ body {
         &:hover {
             font-weight: bolder;
             text-decoration: none;
+        }
+
+        &:focus,
+        &:active {
+            outline: 2px solid $bg_nav_hvr;
+            outline-offset: 2px;
         }
     }
 
@@ -171,14 +273,10 @@ body {
             border-radius: 10px;
             border: 1px $border solid;
         }
-
-
     }
 }
 
 // Fine main per tutte le pagine tranne per home
-
-
 
 // Inizio div principale solo per home
 #divMainHome {
@@ -226,7 +324,6 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-
         padding-left: 5%;
         padding-right: 5%;
 
@@ -245,13 +342,9 @@ body {
             }
         }
     }
-
-
 }
 
-// Fine div principale solo per home 
-
-
+// Fine div principale solo per home
 
 // Inizio anteprime per tutte le pagine tranne per home e portfolio
 .divAnteprime {
@@ -289,11 +382,9 @@ body {
     }
 }
 
-// Fine anteprime per tutte le pagine tranne per home e portfolio 
+// Fine anteprime per tutte le pagine tranne per home e portfolio
 
-
-
-// Fine anteprime servizi pagina portfolio 
+// Fine anteprime servizi pagina portfolio
 #divAnteprimePortfolio {
     width: 100%;
     padding: 35px 5%;
@@ -311,11 +402,9 @@ body {
     }
 }
 
-// Fine anteprime servizi pagina portfolio 
+// Fine anteprime servizi pagina portfolio
 
-
-
-// Inizio footer per tutte le pagine 
+// Inizio footer per tutte le pagine
 .divFooter {
     background-color: $bg_footer;
     color: $c_footer;
@@ -323,28 +412,37 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 35px 5%;
+    padding: 75px 17%;
+
+    p {
+        margin-bottom: 20px;
+    }
 
     a {
         color: $c_footer;
         transition: font-weight 0.3s ease;
+        margin-top: 10px;
 
         &:hover {
             font-weight: bolder;
             text-decoration: none;
         }
+
+        &:focus,
+        &:active {
+            outline: 2px solid $bg_nav_hvr;
+            outline-offset: 2px;
+        }
     }
 }
 
-// Fine footer per tutte le pagine 
-
-
+// Fine footer per tutte le pagine
 
 // Inizio bottone contatti fisso in basso a destra
 .divBottoneContattami {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
     z-index: 1000;
 
     a {
@@ -353,22 +451,28 @@ body {
         background: $bg_button;
         color: $c_button;
         text-align: center;
-        border: 1px solid $c_body;
+        border: 1px solid $c_button;
         border-radius: 20px;
         text-decoration: none;
         font-weight: bold;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease;
 
         &:hover {
             background-color: $bg_button_hvr;
             color: $c_button_hvr;
+            border: 1px solid $c_button_hvr;
+            transform: scale(1.1);
+        }
+
+        &:focus,
+        &:active {
+            outline: 2px solid $bg_nav_hvr;
+            outline-offset: 2px;
         }
     }
 }
 
 // Fine bottone contatti fisso in basso a destra
-
-
 
 @import "SmartphoneGrandi_TabletPiccoli";
 @import "Tablet_TabletGrandi";

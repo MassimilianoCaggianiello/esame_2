@@ -11,28 +11,33 @@
         padding: 75px 17%;
     }
 
-    // Fine header per tutte le pagine 
+    // Fine header per tutte le pagine
 
-
-
-    // Inizio nav per tutte le pagine 
+    // Inizio nav per tutte le pagine
     .divNav {
-        ul {
-            .navLink {
-                flex-basis: 25%;
-                display: flex;
-                width: 100%;
+        .nav-bar {
+            padding: 20px;
 
-                a {
-                    padding: 5px;
-                }
+            .menu-text {
+                font-size: 1.5rem;
+            }
+
+            .menu li {
+                padding-left: 30px;
+            }
+
+            .menu li a {
+                font-size: 1.2rem;
+            }
+
+            .open-menu,
+            .close-menu {
+                display: none;
             }
         }
     }
 
     // Fine nav per tutte le pagine
-
-
 
     // Inizio main per tutte le pagine tranne per home
     .divBody {
@@ -100,14 +105,10 @@
                 margin-top: 75px;
                 margin-bottom: 50px;
             }
-
-
         }
     }
 
     // Fine main per tutte le pagine tranne per home
-
-
 
     // Inizio div principale solo per home
     #divMainHome {
@@ -129,7 +130,6 @@
             padding: 75px 17%;
         }
 
-
         .divAnteprimeHome {
             padding-left: 17%;
             padding-right: 17%;
@@ -145,9 +145,7 @@
         }
     }
 
-    // Fine div principale solo per home 
-
-
+    // Fine div principale solo per home
 
     // Inizio anteprime per tutte le pagine tranne per home e portfolio
     .divAnteprime {
@@ -163,11 +161,9 @@
         }
     }
 
-    // Fine anteprime per tutte le pagine tranne per home e portfolio 
+    // Fine anteprime per tutte le pagine tranne per home e portfolio
 
-
-
-    // Fine anteprime servizi pagina portfolio 
+    // Fine anteprime servizi pagina portfolio
     #divAnteprimePortfolio {
         flex-basis: 25%;
         padding: 75px;
@@ -181,18 +177,14 @@
         }
     }
 
-    // Fine anteprime servizi pagina portfolio 
+    // Fine anteprime servizi pagina portfolio
 
-
-
-    // Inizio footer per tutte le pagine 
+    // Inizio footer per tutte le pagine
     .divFooter {
         padding: 75px 17%;
     }
 
-    // Fine footer per tutte le pagine 
-
-
+    // Fine footer per tutte le pagine
 
     // Inizio bottone contatti fisso in basso a destra
     .divBottoneContattami {
@@ -201,5 +193,4 @@
     }
 
     // Fine bottone contatti fisso in basso a destra
-
 }
