@@ -3,7 +3,7 @@
 @media (min-width: 1200px) {
 
     body {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     // Inizio header per tutte le pagine
@@ -12,32 +12,6 @@
     }
 
     // Fine header per tutte le pagine
-
-    // Inizio nav per tutte le pagine
-    .divNav {
-        .nav-bar {
-            padding: 20px;
-
-            .menu-text {
-                font-size: 1.5rem;
-            }
-
-            .menu li {
-                padding-left: 30px;
-            }
-
-            .menu li a {
-                font-size: 1.2rem;
-            }
-
-            .open-menu,
-            .close-menu {
-                display: none;
-            }
-        }
-    }
-
-    // Fine nav per tutte le pagine
 
     // Inizio main per tutte le pagine tranne per home
     .divBody {

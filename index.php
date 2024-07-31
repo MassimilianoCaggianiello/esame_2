@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="./Immagini/logo.png">
     <title>Massimiliano Caggianiello - Home</title>
     <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Inizio fonts di Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,10 @@
 
 <body>
 
+    <!-- Inizio nav per tutte le pagine -->
+    <?php include './nav.php'; ?>
+    <!-- Fine nav per tutte le pagine -->
+
     <!-- Inizio header per tutte le pagine -->
     <header id="divHeaderHome" class="divHeader">
         <h1>MASSIMILIANO CAGGIANIELLO</h1>
@@ -24,10 +28,6 @@
         <h3>HOME</h3>
     </header>
     <!-- Fine header per tutte le pagine -->
-
-    <!-- Inizio nav per tutte le pagine -->
-    <?php include './nav.php'; ?>
-    <!-- Fine nav per tutte le pagine -->
 
     <!-- Inizio div principale solo per home -->
     <main id="divMainHome">

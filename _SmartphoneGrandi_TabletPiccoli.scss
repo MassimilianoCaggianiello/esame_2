@@ -3,7 +3,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
 
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     // Inizio header per tutte le pagine
@@ -12,66 +12,6 @@
     }
 
     // Fine header per tutte le pagine
-
-    // Inizio nav per tutte le pagine
-    .divNav {
-        .nav-bar {
-            padding: 20px;
-
-            .menu-text {
-                font-size: 1.5rem;
-            }
-
-            .menu li {
-                padding-left: 20px;
-            }
-
-            .menu li a {
-                font-size: 1rem;
-            }
-
-            .open-menu,
-            .close-menu {
-                font-size: 1.5rem;
-                display: block;
-            }
-
-            .menu {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 100%; 
-                height: 100vh;
-                position: fixed;
-                top: 0;
-                right: -100%;
-                z-index: 100;
-                background-color: $bg_nav;
-                transition: all 0.2s ease-in-out;
-            }
-
-            .menu li {
-                margin-top: 40px;
-            }
-
-            .menu li a {
-                padding: 10px;
-            }
-
-            #check:checked~.menu {
-                right: 0;
-            }
-
-            #check:checked~.close-menu {
-                visibility: visible;
-                position: fixed;
-                top: 20px;
-                right: 20px;
-            }
-        }
-    }
-
-    // Fine nav per tutte le pagine
 
     // Inizio main per tutte le pagine tranne per home
     .divBody {

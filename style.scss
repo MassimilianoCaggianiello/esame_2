@@ -8,7 +8,7 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: 13px;
     font-family: $font_body;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,9 @@ body {
     text-align: center;
     padding: 35px 5%;
     transition: padding 0.3s ease;
+    margin-top: 37px;
+    border-bottom: 3px solid $bg_nav;
+    line-height: 2.2;
 }
 
 #divHeaderHome {
@@ -36,135 +39,138 @@ body {
 // Fine header per tutte le pagine
 
 // Inizio nav per tutte le pagine
-.divNav {
+
+nav.hamburger-menu {
+    position: fixed;
+    background-color: $bg_nav;
+    color: $c_nav;
+    padding: 10px;
     width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 1100;
+}
 
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        position: relative;
-        background-color: $bg_nav;
-        padding: 12px 20px;
+nav.hamburger-menu .logo {
+    margin: 0 70px 0 40px;
+}
 
-        .menu-text {
-            color: $c_nav;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-        }
+nav.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-        .menu {
-            display: flex;
-        }
+nav.hamburger-menu li {
+    list-style: none;
+    display: inline;
+    margin: 0 40px 0 0;
+}
 
-        .menu li {
-            padding-left: 30px;
-        }
+nav.hamburger-menu a {
+    color: $c_nav;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.15s ease-in-out;
+}
 
-        .menu li a {
-            display: inline-block;
-            text-decoration: none;
-            color: $c_nav;
-            text-align: center;
-            transition: 0.15s ease-in-out;
-            position: relative;
-            text-transform: uppercase;
-        }
+nav.hamburger-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $c_nav;
+    transition: width 0.3s ease-in-out;
+}
 
-        .menu li a::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background-color: $c_nav;
-            transition: 0.15s ease-in-out;
-        }
+nav.hamburger-menu a:hover::after {
+    width: 100%;
+}
 
-        .menu li a:hover::after {
-            width: 100%;
-        }
+nav.hamburger-menu #controllo {
+    opacity: 0;
+}
 
-        .open-menu,
-        .close-menu {
-            position: absolute;
-            color: $c_nav;
-            cursor: pointer;
-            font-size: 1.5rem;
-            display: none;
-        }
+@media all and (max-width: 768px) {
 
-        .open-menu {
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            z-index: 1010;
-        }
-
-        .close-menu {
-            top: 20px;
-            right: 20px;
-            z-index: 1020;
-        }
-
-        #check {
-            display: none;
-        }
-
-        #check:checked~.open-menu {
-            visibility: hidden;
-        }
-
-        #check:checked~.close-menu {
-            visibility: visible;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
+    /* La label del input che disegna le 3 linee*/
+    nav.hamburger-menu .label-controllo {
+        position: fixed;
+        top: 18px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
     }
 
-    @media (max-width: 576px) {
+    nav.hamburger-menu .label-controllo>span,
+    nav.hamburger-menu .label-controllo>span::before,
+    nav.hamburger-menu .label-controllo>span::after {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: $c_nav;
+        transition-duration: .25s;
+    }
 
-        .nav-bar .open-menu,
-        .nav-bar .close-menu {
-            display: block;
-        }
+    nav.hamburger-menu .label-controllo>span::before {
+        content: '';
+        top: -8px;
+    }
 
-        .nav-bar .menu {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            right: -100%;
-            z-index: 100;
-            background-color: $bg_nav;
-            transition: all 0.2s ease-in-out;
-        }
+    nav.hamburger-menu .label-controllo>span::after {
+        content: '';
+        top: 8px;
+    }
 
-        .nav-bar .menu li {
-            margin-top: 40px;
-        }
+    /* ul del menu */
+    nav.hamburger-menu #menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 90%;
+        height: 100%;
+        padding: 80px 0;
+        background-color: $bg_nav;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+    }
 
-        .nav-bar .menu li a {
-            padding: 10px;
-        }
+    /* Voci di menu */
+    nav.hamburger-menu .vociMenu {
+        display: block;
+        padding: 12px 24px;
+        color: $c_nav;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition-duration: .25s;
+    }
 
-        .nav-bar #check:checked~.menu {
-            right: 0;
-        }
+    /* Voci di menu hover */
+    nav.hamburger-menu .vociMenu:hover {
+        color: $c_nav;
+    }
+
+    #controllo:checked+.label-controllo>span {
+        transform: rotate(45deg);
+    }
+
+    #controllo:checked+.label-controllo>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #controllo:checked+.label-controllo>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #controllo:checked~#menu {
+        left: 0 !important;
     }
 }
 
@@ -175,6 +181,7 @@ body {
     width: 100%;
     background-color: $bg_body;
     color: $c_body;
+    line-height: 2.2;
 
     a {
         color: $c_body;
@@ -227,12 +234,15 @@ body {
 
     #divMainContattiForm {
 
+        line-height: 1;
+
         select,
         input[type="text"],
         input[type="email"],
         textarea {
             width: 100%;
             margin-bottom: 10px;
+            padding: 4px;
         }
 
         input[type="checkbox"] {
@@ -281,6 +291,7 @@ body {
 // Inizio div principale solo per home
 #divMainHome {
     font-size: 15px;
+    line-height: 2.2;
 }
 
 #divImageHome {
@@ -413,10 +424,8 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 75px 17%;
-
-    p {
-        margin-bottom: 20px;
-    }
+    border-top: 3px solid $bg_nav;
+    line-height: 2.2;
 
     a {
         color: $c_footer;
